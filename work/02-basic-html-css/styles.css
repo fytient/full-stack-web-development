@@ -1,0 +1,15 @@
+header {
+    background-color: #DFBAB2 ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+main {
+    background-color: #C4BCBB ;
+}
+
+footer {
+    background-color: #EBDCD8 ;
+}

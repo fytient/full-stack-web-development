@@ -1,0 +1,5 @@
+.list {
+  border: solid red 2px;
+  padding: 2rem;
+  list-style-type: "\1F431";
+}
