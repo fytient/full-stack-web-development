@@ -1,0 +1,87 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style for the login form and elements */
+form {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+}
+
+input[type="text"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* Style for the login page header */
+h1 {
+    text-align: center;
+    /* color: #007acc; */
+    color:#4CAF50;
+}
+
+/* Style for the data page */
+p {
+    text-align: center;
+}
+
+/* Style for the logout button */
+form:nth-child(2) {
+    margin-top: 20px;
+}
+
+/* Style for links */
+a {
+    text-align: center;
+    display: block;
+    /* color: #007acc; */
+    color:#4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
