@@ -1,0 +1,160 @@
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+label {
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="submit"] {
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+/* Error message styles */
+#error {
+    color: red;
+    margin-bottom: 1rem;
+}
+
+/* Word view styles */
+#word-view {
+    display: none;
+}
+
+#word-view h2 {
+    margin-bottom: 1rem;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Logout button styles */
+#logout-button {
+    display: none;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ccc;
+    background-color: #dc3545;
+    color: #fff;
+    border-color: #dc3545;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    margin-bottom: 10px;
+}
+
+#logout-button:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+/* Container styles */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Info styles */
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.info div {
+    margin-bottom: 0.5rem;
+}
+
+.stored-word {
+    margin-top: 0.5rem;
+}
+
+/* Input styles */
+.input {
+    margin-bottom: 0.5rem;
+}
+
+/* Button styles */
+button {
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.login {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+    margin-bottom: 0.5rem;
+}
+
+.login:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+.update {
+    background-color: #28a745;
+    color: #fff;
+    border-color: #28a745;
+    margin-right: 0.5rem;
+    margin-bottom: 10px;
+    padding: 0.5rem; 
+}
+
+.update:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+.delete {
+    background-color: #dc3545;
+    color: #fff;
+    border-color: #dc3545;
+    margin-right: 0.5rem;
+    margin-bottom: 10px;
+    padding: 0.5rem; 
+}
+
+.delete:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+/* Error styles */
+.error {
+    color: red;
+    margin-bottom: 1rem;
+}
