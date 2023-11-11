@@ -1,38 +1,96 @@
-// This is a sample file that demonstrates
-// how you can write an abstraction around
-// a fetch() call
-// This exported function returns a promise
-// that resolves with data
-// or rejects with an error object
-//
-// The caller of this function can decide
-// what to do with the data
-// or what to do with the error
-//
-// You can add to this file and use this function
-// or write your own files/functions
+export const fetchSession = () => {
+  return fetch('/api/session')
+      .catch(err => Promise.reject({ error: 'network-error' }))
+      .then(response => {
+          return response.json();
+      });
+};
 
-export function fetchLogin(username) {
-  return fetch('/api/session/', {
-    method: 'POST',
-    headers: {
-      'content-type': 'application/json', // set this header when sending JSON in the body of request
-    },
-    body: JSON.stringify( { username } ),
-  })
-  // fetch() rejects on network error
-  // So we convert that to a formatted error object
-  // so our caller can handle all "errors" in a similar way
-  .catch( err => Promise.reject({ error: 'network-error' }) )
-  .then( response => {
-    if(!response.ok) {  // response.ok checks the status code from the service
-      // This service returns JSON on errors,
-      // so we use that as the error object and reject
-      return response.json().then( err => Promise.reject(err) );
-    }
-    return response.json(); // happy status code means resolve with data from service
-  });
+export const fetchUser = (username) => {
+  return fetch('/api/session', {
+          method: 'POST',
+          headers: {
+              'content-type': 'application/json',
+          },
+          body: JSON.stringify({ username }),
+      })
+      .catch(err => Promise.reject({ error: 'network-error' }))
+      .then(response => {
+          if (response.ok) {
+              return response.json()
+          } else {
+              return response.json().then(err => Promise.reject(err))
+          }
+      });
+};
+
+export const fetchWord = () => {
+  return fetch('/api/word')
+      .then(response => {
+          if (!response.ok) {
+              // The server responded with an error status code
+              // Throw an error to be caught in the catch block
+              throw new Error('Server error');
+          }
+          // The server responded with a success status code
+          // Parse the JSON in the response
+          return response.json();
+      })
+      .then(data => {
+        return data.storedWord;  // Return the 'word' property of the data
+    })
+      .catch(err => {
+          if (err.message === 'Server error') {
+              // The server responded with an error status code
+              return Promise.reject({ error: 'server-error' });
+          } else {
+              // There was a network error
+              return Promise.reject({ error: 'network-error' });
+          }
+      });
+};
+
+export const fetchUpdateWord = (word) => {
+  return fetch('/api/word', {
+          method: 'PUT',
+          headers: {
+              'content-type': 'application/json',
+          },
+          body: JSON.stringify({ word }),
+      })
+      .catch(err => Promise.reject({ error: 'network-error' }))
+      .then( response => {
+        if(!response.ok) { 
+          return response.json().then( err => Promise.reject(err) );
+        }
+        return response.json(); 
+      })
+      .then(response => {
+        // The word was successfully updated on the server
+        // Now update the UI with the new word
+        updateUIWithNewWord(word);
+        return response;
+      });
+      
+};
+function updateUIWithNewWord(word) {
+  const wordElement = document.querySelector('.stored-word');
+  wordElement.textContent =  `Stored Word: ${word}`;
 }
 
+export const fetchDelete = () => {
+  return fetch('/api/session', {
+          method: 'DELETE',
+          headers: {
+              'content-type': 'application/json',
+          },
+      })
+      .catch(err => Promise.reject({ error: 'network-error' }))
+      .then(response => {
+          if (response.ok) {
+              return response.json()
+          }
+      });
+};
 
 
