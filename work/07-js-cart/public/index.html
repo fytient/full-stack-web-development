@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="product-page">
+        <h1>Product Page</h1>
+        <div class="product-list">
+            
+            <div class="product">
+                <img src="http://placekitten.com/150/150?image=1" alt="Fluffball">
+                <p class="product-name">Fluffball</p>
+                <p class="product-price">$0.99 each</p>
+                <button class="add-to-cart" data-product="1">Add to Cart</button>
+            </div>
+         
+            <div class="product">
+                <img src="http://placekitten.com/150/150?image=2" alt="General Mayhem">
+                <p class="product-name">General Mayhem</p>
+                <p class="product-price">$3.14 each</p>
+                <button class="add-to-cart" data-product="2">Add to Cart</button>
+            </div>
+            
+            <div class="product">
+                <img src="http://placekitten.com/150/150?image=3" alt="Mittens">
+                <p class="product-name">Mittens</p>
+                <p class="product-price">$2.73 each</p>
+                <button class="add-to-cart" data-product="3">Add to Cart</button>
+            </div>
+        </div>
+        <button class="view-cart-btn">View Cart</button>
+    </div>
+
+    <div class="view-cart">
+        <h2>View Cart</h2>
+        <div class="cart-content">
+            <!-- Cart content will be dynamically generated here -->
+        </div>
+        <button class="hide-cart-btn">Hide Cart</button>
+        <button class="checkout-btn">Checkout</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
