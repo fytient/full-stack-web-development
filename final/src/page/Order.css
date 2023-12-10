@@ -1,0 +1,110 @@
+.order {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: #f8edda;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.order__name {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.order__name__input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.order__email {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.order__email__input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.order__phone {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.order__phone__input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.menu label {
+    margin-right: 10px;
+}
+
+.menu select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.checkbox label {
+    margin-left: 5px;
+}
+
+.order__submit {
+    background-color: #0072C6;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.order__submit:hover {
+    background-color: #005ea2;
+}
+
+.verify {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}

@@ -1,0 +1,35 @@
+.about-page {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    color: #333;
+    font-family: Arial, sans-serif;
+  }
+  
+  .about-page__title {
+    font-size: 1,5 rem;
+    font-weight: bold;
+    padding: 40px;
+    text-align: center;
+    color:#ddb769;
+  }
+  
+  .about-page__title--secondary {
+    font-size: 1 rem;
+    margin: 40px 0 20px;
+    color:#ddb769;
+  }
+  
+  .about-page__paragraph {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0 0 20px;
+    padding: 20px;
+  }
+
+  @media screen and (min-width: 44rem) {
+    .about-page {
+      padding: 24px 64px;
+    }
+  }

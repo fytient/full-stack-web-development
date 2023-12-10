@@ -1,0 +1,35 @@
+.photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.photo-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.photo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.photo-container-img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin: 0 0.5rem;
+    border: 1px solid black;
+}
+
+
+@media screen and (max-width: 44rem) {
+    .photo {
+        border-radius: 0%;
+        margin: 0.25rem;
+    }
+}
