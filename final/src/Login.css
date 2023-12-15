@@ -1,0 +1,83 @@
+.pending {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .loading {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+  }
+  
+  .status {
+    text-align: center;
+    font-size: 24px;
+    color: red;
+  }
+  
+  label {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  input {
+    margin-left: 10px;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid #FFC300; 
+    color: white;
+    font-size:1.3rem;
+    margin:0;
+  }
+  input::placeholder {
+    color: #FFC300;
+  }
+  button {
+    display: block;
+    background-color: #333; 
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+  }
+  .input-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 100px;
+  }
+  .login{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('./images/beer7.jpg');
+    background-position: center top;
+    background-size: cover;
+    text-align: center;
+    height: 100vh;
+  }
+  .login-button{
+    color:#333;
+    background-color: #FFC300;
+  }
+  .welcome-text{
+    color:#FFC300;
+    font-size: 50px;
+    margin-top: 0;
+    padding-top: 150px;
+    font-weight: bold;
+  }
+  h3{
+    color:#ddb769;
+    font-size: 20px;
+    margin-top: 0;
+    padding-top: 70px;
+  }
+  .login-request{
+    color:#FFC300;
+    font-size: 20px;
+    margin-top: 0;
+    font-weight: bold;
+  }
